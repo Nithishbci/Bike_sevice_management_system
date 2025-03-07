@@ -28,6 +28,9 @@
    py manage.py createsuperuser
    ```
 2. Provide username, email, and password to create an admin account.
+or use
+username="admin"
+password="admin@123"
 3. After login, admin can see the number of customers, mechanics, and recent service orders on the dashboard.
 4. Admin can see/add/update/delete customers.
 5. Admin can see each customer invoice (if two requests are made by the same customer, it will show the total sum of both requests).
@@ -45,7 +48,7 @@
 2. If a customer is deleted by admin, their request (Enquiry) will be deleted automatically.
 
 ## HOW TO RUN THIS PROJECT
-1. Install Python (3.7.6) (Don't forget to tick **Add to Path** while installing Python).
+1. Install Python (Don't forget to tick **Add to Path** while installing Python).
 2. Open Terminal and execute the following commands:
    ```
    pip install -r requirements.txt
