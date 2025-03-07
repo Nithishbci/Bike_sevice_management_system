@@ -48,8 +48,7 @@
 1. Install Python (3.7.6) (Don't forget to tick **Add to Path** while installing Python).
 2. Open Terminal and execute the following commands:
    ```
-   pip install django==3.0.5
-   pip install django-widget-tweaks
+   pip install -r requirements.txt
    ```
 3. Download the project ZIP folder and extract it.
 4. Move to the project folder in Terminal, then run the following commands:
