@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    body {
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background: linear-gradient(to right,rgb(227, 86, 255),rgb(255, 163, 120))
+		}  
+  </style
+</head>
+
+<body>
+
+  {% include "vehicle/navbar.html" %}
+  <br><br>
+
+  <center>
+    <h3 class='alert alert-success'>Send Us Your Valuable Feedback !</h3>
+
+    <form method="POST">
+      <!-- Very Important csrf Token -->
+      {% csrf_token %}
+      <div class="form-group">
+        <p>
+        <h3>{{ form.as_p }}</h3>
+        </p>
+        <br>
+        <input type="submit" value="Send Message" class='btn btn-primary btn-lg'>
+      </div>
+    </form>
+  </center>
+  <marquee behavior="scroll" direction="left">
+   <img src="{% static "images/bmw.png" %}" width="120" height="80" alt="bmw" />
+    <img src="{% static "images/ducati.png" %}" width="120" height="80" alt="ducati" />
+   <img src="{% static "images/bajaj.png" %}" width="120" height="80" alt="bajaj" />
+   <img src="{% static "images/mahindra.png" %}" width="120" height="80" alt="mahindra" />
+   <img src="{% static "images/tvs.png" %}" width="120" height="80" alt="tvs" />
+   <img src="{% static "images/honda.png" %}" width="120" height="80" alt="honda" />
+   <img src="{% static "images/hero.png" %}" width="120" height="80" alt="hero" />
+   <img src="{% static "images/kwasaki.png" %}" width="120" height="80" alt="kwasaki" />
+   <img src="{% static "images/suzuki.png" %}" width="120" height="80" alt="suzuki" />
+ </marquee>
+  {% include "vehicle/footer.html" %}
+</body>
+
+</html>

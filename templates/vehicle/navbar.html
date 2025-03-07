@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Navbar Styling */
+    .navbar {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      padding: 12px 20px;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-brand {
+      font-size: 22px;
+      font-weight: bold;
+      color: yellow !important;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .navbar-brand:hover {
+      transform: scale(1.1);
+    }
+
+    .navbar-nav .nav-item {
+      margin: 0 10px;
+    }
+
+    .navbar-nav .nav-link {
+      color: #fff !important;
+      font-size: 16px;
+      font-weight: 500;
+      transition: color 0.3s ease-in-out, transform 0.2s;
+    }
+
+    .navbar-nav .nav-link:hover {
+      color: yellow !important;
+      transform: scale(1.1);
+    }
+
+    .navbar-toggler {
+      border: none;
+      outline: none;
+    }
+
+    .navbar-toggler-icon {
+      background-color: white;
+      border-radius: 3px;
+      padding: 5px;
+    }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .navbar-nav {
+        text-align: center;
+      }
+
+      .navbar-nav .nav-item {
+        margin: 5px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="bs-example">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+      <a href="/" class="navbar-brand">Bike Service Management</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav">
+          <a href="/" class="nav-item nav-link active">Home</a>
+          <a href="/customerclick" class="nav-item nav-link">Customer</a>
+          <a href="/mechanicsclick" class="nav-item nav-link">Mechanics</a>
+          <a href="/adminclick" class="nav-item nav-link">Admin</a>
+        </div>
+
+        <div class="navbar-nav">
+          <a href="/aboutus" class="nav-item nav-link">About Us</a>
+          <a href="contactus" class="nav-item nav-link">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+</body>
+
+</html>
